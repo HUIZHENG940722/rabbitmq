@@ -1,4 +1,5 @@
 .idea
 !src/
+target
 !.gitignore
 !pom.xml
