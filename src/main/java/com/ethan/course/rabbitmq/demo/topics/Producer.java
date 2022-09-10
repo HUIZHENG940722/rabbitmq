@@ -1,4 +1,4 @@
-package com.ethan.course.rabbitmq.demo.direct;
+package com.ethan.course.rabbitmq.demo.topics;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -29,11 +29,11 @@ public class Producer {
             // 4 准备消息内容
             String message = "Hello xuexiangban!!!";
             // 5 准备交换机
-            String exchangeName = "amq.direct";
+            String exchangeName = "amq.topic";
             // 5.1 定义routeKey
-            String routeKey = "email";
+            String routeKey = "com.ethan.**";
             // 5.2 指定交换机类型
-            String type = "direct";
+            String type = "topic";
             // 6 发送消息给交换机
             /**
              * @param1 交换机
